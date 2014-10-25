@@ -1,0 +1,20 @@
+{
+  "name": "zetta-spark-device",
+  "version": "0.1.0",
+  "description": "Access spark firmware functions from zetta.",
+  "main": "index.js",
+  "dependencies": {
+    "zetta-device": "~0.8.0",
+    "zetta-scout": "~0.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "zetta",
+    "spark"
+  ],
+  "author": "Matthew Dobson <@mdobs>",
+  "license": "MIT"
+}

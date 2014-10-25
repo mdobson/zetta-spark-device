@@ -3,3 +3,8 @@ node_modules
 npm-debug.log
 .peers/
 .registry/
+55ff6e065075555316241887
+*.pub
+*.der
+*.pub.pem
+*.pem
