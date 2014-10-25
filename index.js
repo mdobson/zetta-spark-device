@@ -8,7 +8,7 @@ var SparkScout = module.exports = function() {
   Scout.call(this);
   this.protocolServer = new ProtocolServer();
 };
-util.inherits(Scout, SparkScout);
+util.inherits(SparkScout, Scout);
 
 SparkScout.prototype.init = function(next) {
   var self = this;
@@ -30,4 +30,7 @@ SparkScout.prototype.init = function(next) {
       });
     });
   });
+
+  this.protocolServer.start();
+  next();
 };

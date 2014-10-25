@@ -5,15 +5,15 @@ var SparkDevice = module.exports = function(core, functions, variables){
   Device.call(this);
   this._core = core;
   this._functions = functions;
-  this._variables = veriables;
-  this.coreId = core._core.coreID;
+  this._variables = variables;
+  this.coreId = core.id;
 };
 util.inherits(SparkDevice, Device);
 
 SparkDevice.prototype.init = function(config) {
   var self = this;
   config
-    .name('sparkcore-'+this.coreID)
+    .name('sparkcore-'+this.coreId)
     .type('sparkcore')
     .state('online')
     .when('online', { allow: this._functions });
